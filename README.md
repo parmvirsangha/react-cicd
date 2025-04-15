@@ -10,7 +10,7 @@ This project demos a complete CI/CD pipeline for a React app using Vite, Docker 
 
 ## Live Demo
 
-[View the live demo](<[https://parmvirsangha.github.io/react-cicd/](https://parmvirsangha.github.io/react-cicd/)>)
+[View the live demo](https://parmvirsangha.github.io/react-cicd/)
 
 ## Technology Stack
 
