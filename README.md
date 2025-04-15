@@ -1,12 +1,105 @@
-# React + Vite
+# README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React CI/CD Pipeline
 
-Currently, two official plugins are available:
+[Deploy to Github Pages](https://github.com/parmvirsangha/react-cicd/actions/workflows/deploy.yml)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Description
 
-## Expanding the ESLint configuration
+This project demos a complete CI/CD pipeline for a React app using Vite, Docker for local dev and Github Actions for automated deployment to Github Pages. It showcases DevOps practices such as containerization, automated workflows, and static site deployment
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Live Demo
+
+[View the live demo](<[https://parmvirsangha.github.io/react-cicd/](https://parmvirsangha.github.io/react-cicd/)>)
+
+## Technology Stack
+
+- React
+- Vite
+- Docker
+- GitHub Actions
+- GitHub Pages
+
+## Local Development
+
+### Prerequisites
+
+- Docker and Docker Compose
+- Git
+
+### Setup and Run
+
+1. Clone the repository
+
+```bash
+
+git clone https://github.com/parmvirsangha/react-cicd.git
+
+cd react-cicd
+
+```
+
+2. Start the Docker development environment
+
+```bash
+
+docker-compose up
+
+```
+
+## Environment Variables
+
+The application uses the following environment variables:
+
+- `NODE_ENV` - Set to "development" for local development
+
+## Deployment
+
+This project is automatically deployed to GitHub Pages using GitHub Actions when changes are pushed to the main branch.
+
+### Manual Deployment
+
+If you want to deploy manually:
+
+1. Build the application
+
+```bash
+
+npm run build
+
+```
+
+2. Deploy to GitHub Pages
+
+```bash
+
+npm run deploy
+
+```
+
+## GitHub Actions Workflow
+
+The CI/CD pipeline includes the following steps:
+
+1. Checkout code
+
+2. Setup Node.js environment
+
+3. Install dependencies
+
+4. Build the application
+
+5. Deploy to GitHub Pages
+
+## Configuration Details
+
+### GitHub Pages Configuration
+
+- Base path: `/react-cicd/` (configured in vite.config.js)
+- Homepage URL: `https://parmvirsangha.github.io/react-cicd`
+
+### Docker Development Configuration
+
+- Development server with hot reload
+- Volume mounting for real-time code changes
+- Port mapping from container to host
